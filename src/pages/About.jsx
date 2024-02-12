@@ -11,6 +11,7 @@ function About() {
                 <Banner page="about" />
                 About
             </main>
+            <Footer />
         </div>
     );
 };

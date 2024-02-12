@@ -2,6 +2,7 @@ import React from "react"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import Banner from "../Components/Banner"
+import Cards from "../Components/Cards"
 
 function Home() {
     return (
@@ -9,8 +10,9 @@ function Home() {
             <Header/>
             <main>
                 <Banner page = "home" content="Chez vous, partout et ailleurs"/>
-                Acceuil
+                <Cards />
             </main>
+            <Footer />
         </div>
     );
 };

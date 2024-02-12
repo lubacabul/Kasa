@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.cardsContainer {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: 50px auto;
+  max-width: 1240px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.cardsContainer .logementsGrid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  padding: 50px;
+  width: 100%;
+}
+.cardsContainer .logementsGrid .logements-item {
+  position: relative;
+}
+.cardsContainer .logementsGrid .logements-item .logements-card {
+  border-radius: 10px;
+  color: white;
+  display: block;
+  height: 340px;
+  max-width: 340px;
+  text-decoration: none;
+}
+.cardsContainer .logementsGrid .logements-item .logements-card .logements-cover {
+  border-radius: 10px;
+  filter: brightness(0.7);
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.cardsContainer .logementsGrid .logements-item .logements-card .logements-title {
+  font-size: 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 90%;
+}/*# sourceMappingURL=Cards.css.map */

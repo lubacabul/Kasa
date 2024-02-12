@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Logements from './pages/Logements'
-import About from './pages/About'
-import Error from './pages/Error'
+import Home from './Pages/Home';
+import Logements from './Pages/Logements'
+import About from './Pages/About'
+import Error from './Pages/Error'
+import './index.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

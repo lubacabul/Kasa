@@ -1,11 +1,18 @@
 import React from "react"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
+import Banner from "../Components/Banner"
 
 function About() {
     return (
-        <div> About </div>
-    )
-}
+        <div>
+            <Header/>
+            <main>
+                <Banner />
+                About
+            </main>
+        </div>
+    );
+};
 
 export default About

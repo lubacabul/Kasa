@@ -8,7 +8,7 @@ function About() {
         <div>
             <Header/>
             <main>
-                <Banner />
+                <Banner page="about" />
                 About
             </main>
         </div>

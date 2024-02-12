@@ -8,7 +8,7 @@ function Home() {
         <div>
             <Header/>
             <main>
-                <Banner content="Chez vous, partout et ailleurs"/>
+                <Banner page = "home" content="Chez vous, partout et ailleurs"/>
                 Acceuil
             </main>
         </div>

@@ -1,1 +1,19 @@
-@import '../index.css';/*# sourceMappingURL=Footer.css.map */
+@import '../index.css';
+footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px;
+  width: 100%;
+}
+footer img {
+  height: 39px;
+  width: 122px;
+}
+footer p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}/*# sourceMappingURL=Footer.css.map */

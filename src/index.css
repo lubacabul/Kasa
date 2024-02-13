@@ -8,4 +8,26 @@
 
 body {
   width: 100%;
+}
+
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  margin: 100px;
+}
+.error img {
+  height: 263px;
+  width: 597px;
+}
+.error p {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.error a {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

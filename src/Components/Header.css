@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  width: 100%;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +27,7 @@
   gap: 50px;
 }
 .Header .navbar a {
-  color: #FF6060;
+  color: black;
   font-size: 24px;
   font-weight: 500;
   text-decoration: none;

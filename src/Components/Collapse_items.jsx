@@ -12,7 +12,7 @@ function Accordion({ title, content }) {
   return (
     <div className={`accordions ${active && "active"}`}>
       <div className="accordionTitle" onClick={handleToggle}>
-        {title} 
+        <h2>{title}</h2>
         <img src={Arrow} className="accordionIcon"/>
       </div>
       <div className="accordionContent">{content}</div>

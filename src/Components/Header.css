@@ -10,6 +10,33 @@ body {
   width: 100%;
 }
 
+.collapse {
+  width: 70%;
+  margin: auto;
+}
+
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  margin: 100px;
+}
+.error img {
+  height: 263px;
+  width: 597px;
+}
+.error p {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.error a {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -33,5 +60,5 @@ body {
   text-decoration: none;
 }
 .Header .navbar a.active {
-  border-bottom: solid 2px #FF6060;
+  border-bottom: solid 2px black;
 }/*# sourceMappingURL=Header.css.map */

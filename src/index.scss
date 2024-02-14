@@ -21,23 +21,27 @@ $gallery-color: #F6F6F6;
 
   // Page d'erreur 404 //
 
-  .error { align-items: center;
+  .error { 
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 139px;
     margin: 100px;
 
-    img { height: 263px;
-          width: 597px;
+    img { 
+      height: 263px;
+      width: 597px;
         }
 
-    p { color: $main-color;
-        font-size: 36px;
-        font-weight: 500;
-      }
-
-    a { color: $main-color;
-        font-size: 18px;
-        font-weight: 500;
+    .errorContent{
+      color: $main-color;
+      font-size: 36px;
+      font-weight: 500;
+    }
+        
+    .navLinkError { 
+      color: black;
+      font-size: 18px;
+      font-weight: 500;
       }
     }

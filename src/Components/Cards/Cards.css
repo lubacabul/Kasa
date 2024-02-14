@@ -10,6 +10,33 @@ body {
   width: 100%;
 }
 
+.collapse {
+  width: 70%;
+  margin: auto;
+}
+
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  margin: 100px;
+}
+.error img {
+  height: 263px;
+  width: 597px;
+}
+.error .errorContent {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.error .navLinkError {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .cardsContainer {
   background-color: #F6F6F6;
   border-radius: 25px;

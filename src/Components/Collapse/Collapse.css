@@ -26,13 +26,13 @@ body {
   height: 263px;
   width: 597px;
 }
-.error p {
+.error .errorContent {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-.error a {
-  color: #FF6060;
+.error .navLinkError {
+  color: black;
   font-size: 18px;
   font-weight: 500;
 }

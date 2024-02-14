@@ -1,8 +1,8 @@
 import React from "react"
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
-import Banner from "../Components/Banner"
-import Cards from "../Components/Cards"
+import Header from "../Components/Header/Header"
+import Footer from "../Components/Footer/Footer"
+import Banner from "../Components/Banner/Banner"
+import Cards from "../Components/Cards/Cards"
 
 function Home() {
     return (

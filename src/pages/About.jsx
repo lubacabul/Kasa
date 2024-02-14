@@ -1,8 +1,8 @@
 import React from "react"
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
-import Banner from "../Components/Banner"
-import Accordion from "../Components/Collapse_items";
+import Header from "../Components/Header/Header"
+import Footer from "../Components/Footer/Footer"
+import Banner from "../Components/Banner/Banner"
+import Accordion from "../Components/Collapse/Collapse_items";
 
 function About() {
     return (
@@ -10,7 +10,6 @@ function About() {
             <Header/>
             <main>
                 <Banner page="about" />
-                About
                 <section className="collapse">
                     < Accordion
                         title="Fiabilité"

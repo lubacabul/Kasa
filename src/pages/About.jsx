@@ -11,7 +11,7 @@ function About() {
             <main>
                 <Banner page="about" />
                 About
-                <section>
+                <section className="collapse">
                     < Accordion
                     title="Fiabilité"
                     content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, 

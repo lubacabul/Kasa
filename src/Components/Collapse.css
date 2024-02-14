@@ -10,6 +10,11 @@ body {
   width: 100%;
 }
 
+.collapse {
+  width: 70%;
+  margin: auto;
+}
+
 .error {
   align-items: center;
   display: flex;
@@ -32,26 +37,47 @@ body {
   font-weight: 500;
 }
 
-.accordion {
-  border: 1px solid black;
+.accordions {
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
 }
 
 .accordionTitle {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #FF6060;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  width: 100%;
+}
+
+.accordionIcon {
+  transition: all 0.5s ease;
+}
+
+.active .accordionIcon {
+  transform: rotate(-180deg);
 }
 
 .accordionContent {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.2s ease-in;
   background-color: #F6F6F6;
-  font-size: 18px;
   color: black;
-  display: none;
+  width: 100%;
 }
 
-.accordionImg::before {
-  transform: rotate(180deg);
-  transition: all 1s ease;
+.active .accordionContent {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  padding: 1rem;
 }/*# sourceMappingURL=Collapse.css.map */

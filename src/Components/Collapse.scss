@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+.accordion {
+    border: 1px solid black;
+}
+
+.accordionTitle {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-color;
+    border-radius: 5px;                     
+
+    }
+
+.accordionContent { 
+    background-color: $gallery-color;
+    font-size: 18px;
+    color: black;
+    display: none;                         
+              } 
+
+.accordionImg::before {
+    transform: rotate(180deg);
+    transition: all 1s ease;
+
+}

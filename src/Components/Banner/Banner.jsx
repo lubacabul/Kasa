@@ -14,7 +14,7 @@ function Banner({ page, content }) {
     return (
         <div className='banner'>
             <img src={ imageSrc} alt='Photos de montagne'></img>
-            <div className='bannerText'>
+            <div className='banner-text'>
                 <p>{content}</p>
             </div>
         </div>

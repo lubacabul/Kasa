@@ -5,14 +5,14 @@ import './Cards.css'
 
 function Logements() {
     return (
-        <section className='cardsContainer'>
-            <div className='logementsGrid'>
+        <section className='cards-container'>
+            <div className='logements-grid'>
             {ListLogements.map((location) => (
-                <div key={location.id} className='logementsItem'>
+                <div key={location.id} className='logements-item'>
                     <Link to={"/logements/" + location.id}
-                        className='logementsCard'>
-                        <img src={location.cover} alt={location.title} className='logementsCover'/>
-                        <h2 className='logementsTitle'>{location.title}</h2>
+                        className='logements-card'>
+                        <img src={location.cover} alt={location.title} className='logements-cover'/>
+                        <h2 className='logements-title'>{location.title}</h2>
                     </Link>
                 </div>
              ))}

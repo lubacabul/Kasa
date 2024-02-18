@@ -9,7 +9,7 @@
     width: 100%;
   }
   
-  .accordionTitle {
+  .accordion-title {
     align-items: center;
     background-color: $main-color;
     border-radius: 5px;
@@ -19,15 +19,15 @@
     width: 100%;
   }
   
-  .accordionIcon {
+  .accordion-icon {
     transition: all 0.5s ease;
   }
 
-  .active .accordionIcon {
+  .active .accordion-icon {
     transform: rotate(-180deg);
   }
   
-  .accordionContent {
+  .accordion-content {
     visibility: hidden;
     height: 0;
     overflow: hidden;
@@ -38,7 +38,7 @@
     width: 100%;
   }
   
-  .active .accordionContent {
+  .active .accordion-content {
     visibility: visible;
     height: auto;
     overflow: visible;

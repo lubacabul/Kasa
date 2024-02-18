@@ -5,12 +5,12 @@ import './Header.css'
 
 function Header() {
     return (
-       <header className='Header'>
+       <header className='header'>
         <Link to="/">
-            <img src={Logo} alt="Logo de Kasa" className='Header_logo'/>
+            <img src={Logo} alt="Logo de Kasa" className='header-logo'/>
         </Link>
 
-        <nav className='navbar'>
+        <nav className='nav-bar'>
                 <NavLink to="/">
                     Accueil
                 </NavLink>

@@ -13,8 +13,8 @@ function Error() {
             <Header />
             <main className='error'>
                 <img src={error404} alt="Erreur" />
-                <p className="errorContent">Oups! La page demandez n'existe pas.</p>
-                    <NavLink to="/" className="navLinkError">
+                <p className="error-content">Oups! La page demandez n'existe pas.</p>
+                    <NavLink to="/" className="nav-link-error">
                     Retourner sur la page d'accueil
                     </NavLink>
             </main> 

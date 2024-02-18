@@ -26,39 +26,39 @@ body {
   height: 263px;
   width: 597px;
 }
-.error .errorContent {
+.error .error-content {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-.error .navLinkError {
+.error .nav-link-error {
   color: black;
   font-size: 18px;
   font-weight: 500;
 }
 
-.Header {
+.header {
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
   max-width: 1240px;
 }
-.Header .Header_logo {
+.header .header-logo {
   align-items: center;
   height: 68px;
   width: 210px;
 }
-.Header .navbar {
+.header .nav-bar {
   align-items: center;
   display: flex;
   gap: 50px;
 }
-.Header .navbar a {
+.header .nav-bar a {
   color: black;
   font-size: 24px;
   font-weight: 500;
   text-decoration: none;
 }
-.Header .navbar a.active {
+.header .nav-bar a.active {
   border-bottom: solid 2px black;
 }/*# sourceMappingURL=Header.css.map */

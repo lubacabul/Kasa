@@ -26,12 +26,12 @@ body {
   height: 263px;
   width: 597px;
 }
-.error .errorContent {
+.error .error-content {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-.error .navLinkError {
+.error .nav-link-error {
   color: black;
   font-size: 18px;
   font-weight: 500;
@@ -46,7 +46,7 @@ body {
   width: 100%;
 }
 
-.accordionTitle {
+.accordion-title {
   align-items: center;
   background-color: #FF6060;
   border-radius: 5px;
@@ -56,15 +56,15 @@ body {
   width: 100%;
 }
 
-.accordionIcon {
+.accordion-icon {
   transition: all 0.5s ease;
 }
 
-.active .accordionIcon {
+.active .accordion-icon {
   transform: rotate(-180deg);
 }
 
-.accordionContent {
+.accordion-content {
   visibility: hidden;
   height: 0;
   overflow: hidden;
@@ -75,7 +75,7 @@ body {
   width: 100%;
 }
 
-.active .accordionContent {
+.active .accordion-content {
   visibility: visible;
   height: auto;
   overflow: visible;

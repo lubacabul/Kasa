@@ -53,10 +53,10 @@ body {
   padding: 50px;
   width: 100%;
 }
-.cardsContainer .logementsGrid .logements-item {
+.cardsContainer .logementsGrid .logementsItem {
   position: relative;
 }
-.cardsContainer .logementsGrid .logements-item .logements-card {
+.cardsContainer .logementsGrid .logementsItem .logementsCard {
   border-radius: 10px;
   color: white;
   display: block;
@@ -64,7 +64,7 @@ body {
   max-width: 340px;
   text-decoration: none;
 }
-.cardsContainer .logementsGrid .logements-item .logements-card .logements-cover {
+.cardsContainer .logementsGrid .logementsItem .logementsCard .logementsCover {
   border-radius: 10px;
   filter: brightness(0.7);
   height: 340px;
@@ -72,7 +72,7 @@ body {
      object-fit: cover;
   width: 100%;
 }
-.cardsContainer .logementsGrid .logements-item .logements-card .logements-title {
+.cardsContainer .logementsGrid .logementsItem .logementsCard .logementsTitle {
   font-size: 18px;
   position: absolute;
   bottom: 15px;

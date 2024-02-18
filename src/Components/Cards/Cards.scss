@@ -16,10 +16,10 @@
         padding: 50px;
         width: 100%;                  
         
-        .logements-item { 
+        .logementsItem { 
             position: relative;
 
-            .logements-card { 
+            .logementsCard { 
                 border-radius: 10px; 
                 color: white;
                 display: block;
@@ -28,7 +28,7 @@
                 text-decoration: none;                                                         
 
 
-                .logements-cover { 
+                .logementsCover { 
                     border-radius: 10px;
                     filter: brightness(0.70);
                     height: 340px;
@@ -37,7 +37,7 @@
                                                                              
                     }
 
-                    .logements-title { 
+                    .logementsTitle { 
                         font-size: 18px;
                         position: absolute;
                         bottom: 15px;

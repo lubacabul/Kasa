@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import ListLogements from '../Data/logements.json'
-import '../index.css'
+import ListLogements from '../../Data/logements.json'
+import '../../index.css'
 import './Cards.css'
 
 function Logements() {
@@ -8,11 +8,11 @@ function Logements() {
         <section className='cardsContainer'>
             <div className='logementsGrid'>
             {ListLogements.map((location) => (
-                <div key={location.id} className='logements-item'>
+                <div key={location.id} className='logementsItem'>
                     <Link to={"/logements/" + location.id}
-                        className='logements-card'>
-                        <img src={location.cover} alt={location.title} className='logements-cover'/>
-                        <h2 className='logements-title'>{location.title}</h2>
+                        className='logementsCard'>
+                        <img src={location.cover} alt={location.title} className='logementsCover'/>
+                        <h2 className='logementsTitle'>{location.title}</h2>
                     </Link>
                 </div>
              ))}

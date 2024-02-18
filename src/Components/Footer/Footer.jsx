@@ -1,5 +1,5 @@
 import React from 'react'
-import WhiteLogo from '../Assets/whiteLogo.png'
+import WhiteLogo from '../../Assets/whiteLogo.png'
 import './Footer.css'
 
 function Footer() {

@@ -1,5 +1,5 @@
-import BannerImgHome from "../Assets/Banner_home.png"
-import BannerImgAbout from "../Assets/Banner_about.png"
+import BannerImgHome from "../../Assets/Banner_home.png"
+import BannerImgAbout from "../../Assets/Banner_about.png"
 
 
 import './Banner.css'

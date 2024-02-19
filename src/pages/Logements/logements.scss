@@ -1,0 +1,63 @@
+@import '../../index.scss';
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 1240px;
+  }
+  
+  .card-information { 
+      display: flex;
+      justify-content: space-between;
+    }
+
+  .location.id {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+  .host-id{
+    display: flex;
+    flex-direction: row;
+    width: 13%;
+    justify-content: space-between;
+    
+      .host-name {
+        color: $main-color;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .host-img{
+        border-radius: 33px;
+        height: 74px;
+        width: 74px;        
+      }
+  }
+
+  .location-name {
+    color: $main-color;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .location-location {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .collapse-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px; 
+    width: 100%; 
+  }
+
+  .host-information {
+    display: flex;
+    flex-direction: column;
+  }

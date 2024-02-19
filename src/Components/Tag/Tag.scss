@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.tags {
+    margin-top: 25px;
+}
+
+.tag-container {
+    align-items: center; 
+    display: flex;
+    gap: 17px; 
+    height: 25px; 
+    justify-content: left;
+}                    
+
+.item {
+    background-color: #FF6060;;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px 10px;
+    color: white;
+}      

@@ -1,0 +1,41 @@
+.container {
+    align-items: center;
+    display: flex;
+    height: 415px;
+    justify-content: center; 
+    position: relative;
+    width: 1240px;
+    color: white;
+    margin: auto;
+}                   
+                  
+.slide {
+    border-radius: 20px; 
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    }                            
+
+.slidehidden {display: none;} 
+
+.arrowleft {
+    position: absolute;
+    left: 1%;
+ }
+
+.arrowright {
+    position: absolute;
+    right: 1%;  
+} 
+
+.arrow:hover {
+    cursor: pointer;
+}
+                  
+.slide-number {
+    font-size: 18px;
+    position: absolute;
+    bottom: 7%;
+    }                               
+
+                          

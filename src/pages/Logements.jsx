@@ -4,16 +4,20 @@ import DataLogements from '../Data/logements.json'
 import Error from '../Pages/Error'
 import Collapse from '../Components/Collapse/Collapse_items'
 import '../index.css';
+import Header from '../Components/Header/Header'
+import Footer from '../Components/Footer/Footer'
+import Slider from '../Components/Slider/Slider'
 
 function LogementsCard() {
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
     console.log("id:", id);
 
-            return (
-
+    return (
+        <div>
+            <Header/>
             <main> 
-                <img src=''></img>
+                <Slider />
                 <section className='card-container' >
                     <div className='card-information'>
                         <div className='location-id' >
@@ -37,6 +41,8 @@ function LogementsCard() {
                     </div>
                 </section>
             </main>
+            <Footer />
+        </div>
 
         )
     }

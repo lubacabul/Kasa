@@ -8,12 +8,16 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import Slider from '../../Components/Slider/Slider'
 import Tag from '../../Components/Tag/Tag'
+import Stars from '../../Components/Stars/Stars'
 
 function LogementsCard() {
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
     console.log("id:", id);
-
+   
+    if (!location) {
+        return < Error />
+    } else {
     return (
         <div>
             <Header/>
@@ -31,6 +35,7 @@ function LogementsCard() {
                                     <p className='host-name'>{location.host.name}</p>
                                     <img className='host-img' src={location.host.picture} alt="Portrait du propriétaire" />
                             </div>
+                            <Stars />
                         </div>
                     </div>
                     <div className='collapse-container'>
@@ -50,5 +55,6 @@ function LogementsCard() {
 
         )
     }
+}
 
 export default LogementsCard

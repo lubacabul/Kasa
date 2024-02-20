@@ -72,7 +72,7 @@ body {
      object-fit: cover;
   width: 100%;
 }
-.cards-container .logements-grid .logements-item .logements-card .logementstitle {
+.cards-container .logements-grid .logements-item .logements-card .logements-title {
   font-size: 18px;
   position: absolute;
   bottom: 15px;

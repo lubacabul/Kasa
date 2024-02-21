@@ -45,6 +45,8 @@ a {
   font-weight: 500;
 }
 
+/*Medium and (between 700px and 1020px ) */
+/* Small and (under 700px ) */
 .cards-container {
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -53,16 +55,35 @@ a {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+@media (max-width: 699px) {
+  .cards-container {
+    width: 90%;
+    background-color: white;
+    margin-top: 0px;
+  }
+}
 .cards-container .logements-grid {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
-  margin: auto;
-  padding: 50px;
-  width: 100%;
+  width: 90%;
+}
+@media (max-width: 699px) {
+  .cards-container .logements-grid {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+  }
 }
 .cards-container .logements-grid .logements-item {
   position: relative;
+}
+@media (max-width: 699px) {
+  .cards-container .logements-grid .logements-item {
+    height: 225px;
+    max-width: 100%;
+  }
 }
 .cards-container .logements-grid .logements-item .logements-card {
   border-radius: 10px;
@@ -72,6 +93,12 @@ a {
   max-width: 340px;
   text-decoration: none;
 }
+@media (max-width: 699px) {
+  .cards-container .logements-grid .logements-item .logements-card {
+    height: 100%;
+    max-width: 100%;
+  }
+}
 .cards-container .logements-grid .logements-item .logements-card .logements-cover {
   border-radius: 10px;
   filter: brightness(0.7);
@@ -79,6 +106,12 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+@media (max-width: 699px) {
+  .cards-container .logements-grid .logements-item .logements-card .logements-cover {
+    height: 100%;
+    max-width: 100%;
+  }
 }
 .cards-container .logements-grid .logements-item .logements-card .logements-title {
   font-size: 18px;

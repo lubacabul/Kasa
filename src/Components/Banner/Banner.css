@@ -53,11 +53,11 @@ a {
   width: 85%;
   position: relative;
 }
-@media (max-width: 700px) {
+@media (max-width: 699px) {
   .banner {
     width: 90%;
     height: 111px;
-    margin: auto;
+    margin: 40px auto;
   }
 }
 .banner .banner-text {
@@ -70,16 +70,18 @@ a {
   top: 38%;
   width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 699px) {
   .banner .banner-text {
     font-size: 24px;
     text-align: left;
+    width: 90%;
   }
 }
-@media (max-width: 1020px) {
+@media (min-width: 700px) and (max-width: 1023.99px) {
   .banner .banner-text {
     font-size: 38px;
     text-align: left;
+    width: 90%;
   }
 }
 .banner img {
@@ -91,9 +93,9 @@ a {
      object-fit: cover;
   width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 699px) {
   .banner img {
     height: 100%;
-    width: 90%;
+    width: 100%;
   }
 }/*# sourceMappingURL=Banner.css.map */

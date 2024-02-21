@@ -9,7 +9,7 @@
     @include small {
         width: 90%;
         height: 111px;
-        margin: auto;
+        margin: 40px auto;
     }
 
         .banner-text { color: white;
@@ -23,11 +23,12 @@
                 @include small {
                     font-size: 24px;
                     text-align: left;
+                    width: 90%;
                 }
-
                 @include medium {
                     font-size: 38px;
                     text-align: left;
+                    width: 90%;
                 }
             }
 
@@ -39,7 +40,7 @@
                           width: 100%;
                             @include small {
                                 height: 100%;
-                                width: 90%;
+                                width: 100%;
                             }
                         }
 }

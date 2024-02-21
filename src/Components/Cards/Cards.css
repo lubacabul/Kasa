@@ -26,6 +26,11 @@ ul {
     width: 90%;
   }
 }
+@media (min-width: 700px) and (max-width: 1020px) {
+  .collapse {
+    width: 90%;
+  }
+}
 
 .cards-container {
   background-color: #F6F6F6;
@@ -39,7 +44,7 @@ ul {
   .cards-container {
     width: 90%;
     background-color: white;
-    margin-top: 0px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 700px) and (max-width: 1020px) {

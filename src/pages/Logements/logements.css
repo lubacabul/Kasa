@@ -25,6 +25,11 @@ ul {
     width: 90%;
   }
 }
+@media (min-width: 700px) and (max-width: 1020px) {
+  .collapse {
+    width: 90%;
+  }
+}
 
 /* Small and (under 700px ) */
 /*Medium and (between 700px and 1020px ) */

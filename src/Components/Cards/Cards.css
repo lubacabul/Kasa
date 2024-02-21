@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Small and (under 700px ) */
+/*Medium and (between 700px and 1020px ) */
+@import '../../Media_queries.css';
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -14,44 +17,21 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .collapse {
   width: 70%;
   margin: auto;
 }
-
-.error {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 139px;
-  margin: 100px;
-}
-.error img {
-  height: 263px;
-  width: 597px;
-}
-.error .error-content {
-  color: #FF6060;
-  font-size: 36px;
-  font-weight: 500;
-}
-.error .nav-link-error {
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
+@media (max-width: 699px) {
+  .collapse {
+    width: 90%;
+  }
 }
 
-/*Medium and (between 700px and 1020px ) */
-/* Small and (under 700px ) */
 .cards-container {
   background-color: #F6F6F6;
   border-radius: 25px;
   margin: 50px auto;
-  width: 85%;
+  width: 90%;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -62,11 +42,18 @@ a {
     margin-top: 0px;
   }
 }
+@media (min-width: 700px) and (max-width: 1020px) {
+  .cards-container {
+    width: 90%;
+    margin-top: 0px;
+  }
+}
 .cards-container .logements-grid {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
-  width: 90%;
+  width: 100%;
+  padding: 5%;
 }
 @media (max-width: 699px) {
   .cards-container .logements-grid {
@@ -74,6 +61,16 @@ a {
     height: 100%;
     width: 100%;
     gap: 20px;
+    padding: 0px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1020px) {
+  .cards-container .logements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 2rem;
   }
 }
 .cards-container .logements-grid .logements-item {
@@ -82,7 +79,7 @@ a {
 @media (max-width: 699px) {
   .cards-container .logements-grid .logements-item {
     height: 225px;
-    max-width: 100%;
+    width: 100%;
   }
 }
 .cards-container .logements-grid .logements-item .logements-card {
@@ -90,16 +87,22 @@ a {
   color: white;
   display: block;
   height: 340px;
-  max-width: 340px;
   text-decoration: none;
 }
 @media (max-width: 699px) {
   .cards-container .logements-grid .logements-item .logements-card {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
   }
 }
-.cards-container .logements-grid .logements-item .logements-card .logements-cover {
+@media (min-width: 700px) and (max-width: 1020px) {
+  .cards-container .logements-grid .logements-item .logements-card {
+    width: 100%;
+    max-width: none;
+  }
+}
+.cards-container .logements-grid .logements-item .logements-cover {
   border-radius: 10px;
   filter: brightness(0.7);
   height: 340px;
@@ -108,15 +111,19 @@ a {
   width: 100%;
 }
 @media (max-width: 699px) {
-  .cards-container .logements-grid .logements-item .logements-card .logements-cover {
+  .cards-container .logements-grid .logements-item .logements-cover {
     height: 100%;
-    max-width: 100%;
   }
 }
-.cards-container .logements-grid .logements-item .logements-card .logements-title {
+.cards-container .logements-grid .logements-item .logements-title {
   font-size: 18px;
   position: absolute;
   bottom: 15px;
   left: 15px;
   width: 90%;
+}
+@media (min-width: 700px) and (max-width: 1020px) {
+  .cards-container .logements-grid .logements-item .logements-title {
+    width: 80%;
+  }
 }/*# sourceMappingURL=Cards.css.map */

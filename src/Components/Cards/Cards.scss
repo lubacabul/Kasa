@@ -1,11 +1,11 @@
 @import '../../index.scss';
-@import '../../Media_queries.scss';
+@import '../../Media_queries.css';
 
 .cards-container { 
     background-color: $gallery-color;
     border-radius: 25px; 
     margin: 50px auto;
-    width: 85%;
+    width: 90%;
     padding-bottom: 10px;
     padding-top: 10px;
         @include small {
@@ -14,23 +14,41 @@
             margin-top: 0px;
         }
 
+        @include medium {
+            width: 90%;
+            margin-top: 0px;
+        }
+
     .logements-grid { 
         display: grid;
         gap: 50px;
         grid-template-columns: repeat(3, 1fr);
-        width: 90%; 
+        width: 100%; 
+        padding: 5%;
             @include small{
                 grid-template-columns: repeat(1, 1fr);
                 height: 100%;
                 width: 100%;
                 gap: 20px;
-            }                 
+                padding: 0px;
+            }   
+
+            @include medium{
+                grid-template-columns: repeat(2, 1fr);
+                height: 100%;
+                width: 100%;
+                gap: 20px;
+                padding: 2rem;
+                
+            }   
+            
+            
         
         .logements-item { 
             position: relative;
             @include small {
                 height: 225px;
-                max-width: 100%;
+                width: 100%;
             }
 
             .logements-card { 
@@ -38,13 +56,19 @@
                 color: white;
                 display: block;
                 height: 340px;
-                max-width: 340px;
                 text-decoration: none; 
-                @include small {
-                    height: 100%;
-                    max-width: 100%;
-                }
+                    @include small {
+                        height: 100%;
+                        width: 100%;
+                        max-width: none;
+                    }
+                    @include medium{
+                        width: 100%;
+                        max-width: none;
 
+                    }
+
+                }  
 
                 .logements-cover { 
                     border-radius: 10px;
@@ -54,9 +78,7 @@
                     width: 100%;   
                         @include small {
                             height: 100%;
-                            max-width: 100%;
-                        }         
-                                                                             
+                        } 
                     }
 
                     .logements-title { 
@@ -65,5 +87,8 @@
                         bottom: 15px;
                         left: 15px;
                         width: 90%;
+                        @include medium{
+                            width: 80%;
+                        }
                       }
-} } } }
+} } }

@@ -1,6 +1,17 @@
+/* Small and (under 700px ) */
+/*Medium and (between 700px and 1020px ) */
 .star {
   align-items: flex-end;
   display: flex;
   gap: 2px;
   margin-top: 10px;
+}
+@media (max-width: 699px) {
+  .star {
+    margin: auto;
+  }
+  .star img {
+    height: 18px;
+    width: 18px;
+  }
 }/*# sourceMappingURL=Stars.css.map */

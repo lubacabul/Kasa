@@ -1,12 +1,25 @@
+/* Small and (under 700px ) */
+/*Medium and (between 700px and 1020px ) */
 .container {
   align-items: center;
   display: flex;
   height: 415px;
   justify-content: center;
   position: relative;
-  width: 1240px;
+  max-width: 1240px;
+  width: 95%;
   color: white;
   margin: auto;
+}
+@media (max-width: 699px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1020px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .slide {
@@ -15,6 +28,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+@media (max-width: 699px) {
+  .slide {
+    width: 100%;
+  }
 }
 
 .slidehidden {
@@ -25,10 +43,30 @@
   position: absolute;
   left: 1%;
 }
+@media (max-width: 699px) {
+  .arrowleft {
+    height: 24px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1020px) {
+  .arrowleft {
+    height: 45px;
+  }
+}
 
 .arrowright {
   position: absolute;
   right: 1%;
+}
+@media (max-width: 699px) {
+  .arrowright {
+    height: 24px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1020px) {
+  .arrowright {
+    height: 45px;
+  }
 }
 
 .arrow:hover {
@@ -39,4 +77,9 @@
   font-size: 18px;
   position: absolute;
   bottom: 7%;
+}
+@media (max-width: 699px) {
+  .slide-number {
+    display: none;
+  }
 }/*# sourceMappingURL=Slider.css.map */

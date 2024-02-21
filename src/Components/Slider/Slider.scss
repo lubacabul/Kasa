@@ -1,12 +1,21 @@
+@import '../../Media_queries.scss';
+
 .container {
     align-items: center;
     display: flex;
     height: 415px;
     justify-content: center; 
     position: relative;
-    width: 1240px;
+    max-width: 1240px;
+    width: 95%;
     color: white;
     margin: auto;
+    @include small{
+        width: 90%;
+    }
+    @include medium {
+        width: 90%;
+    }
 }                   
                   
 .slide {
@@ -14,6 +23,9 @@
     height: 100%;
     object-fit: cover;
     width: 100%;
+    @include small{
+        width: 100%;
+    }
     }                            
 
 .slidehidden {display: none;} 
@@ -21,11 +33,23 @@
 .arrowleft {
     position: absolute;
     left: 1%;
+        @include small{
+            height: 24px;
+        }
+        @include medium{
+            height: 45px;
+        }
  }
 
 .arrowright {
     position: absolute;
     right: 1%;  
+    @include small{
+        height: 24px;
+    }
+    @include medium{
+        height: 45px;
+    }
 } 
 
 .arrow:hover {
@@ -36,6 +60,9 @@
     font-size: 18px;
     position: absolute;
     bottom: 7%;
+    @include small{
+        display: none;
+    }
     }                               
 
-                          
+ 

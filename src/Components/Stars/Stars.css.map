@@ -1,1 +1,1 @@
-{"version":3,"sources":["Stars.scss","Stars.css"],"names":[],"mappings":"AAAA;EAAO,qBAAA;EACH,aAAA;EACA,QAAA;EACA,gBAAA;ACEJ","file":"Stars.css"}
+{"version":3,"sources":["../../Media_queries.scss","Stars.scss","Stars.css"],"names":[],"mappings":"AAEA,6BAAA;AAOA,0CAAA;ACPA;EAAO,qBAAA;EACH,aAAA;EACA,QAAA;EACA,gBAAA;ACEJ;AFHE;ECFF;IAKQ,YAAA;ECIN;EDHM;IACI,YAAA;IACA,WAAA;ECKV;AACF","file":"Stars.css"}

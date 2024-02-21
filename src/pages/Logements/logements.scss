@@ -1,15 +1,29 @@
 @import '../../index.scss';
+@import '../../Media_queries.scss';
 
 .card-container{
     display: flex;
     flex-direction: column;
     margin: 50px auto;
     max-width: 1240px;
+    width: 90%;
+      @include medium{
+        width: 90%;
+      }
+      @include small{
+        width: 90%;
+        margin: 30px auto;
+      }
   }
   
   .card-information { 
       display: flex;
       justify-content: space-between;
+      width: 100%;
+        @include small{
+          display: flex;
+          flex-direction: column;
+        }
     }
 
   .location.id {
@@ -24,6 +38,9 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    @include small{
+      justify-content: right;
+    }
     
     
       .host-name {
@@ -32,12 +49,20 @@
         font-size: 18px;
         font-weight: 500;
         width: 55%;
+        @include small {
+          width: 30%;
+          font-size: 12px;
+        }
       }
 
       .host-img{
         border-radius: 33px;
         height: 74px;
-        width: 74px;        
+        width: 74px; 
+        @include small{
+          height: 32px;
+          width: 32px;
+        }       
       }
   }
 
@@ -45,12 +70,18 @@
     color: $main-color;
     font-size: 36px;
     font-weight: 500;
+    @include small{
+      font-size: 18px;
+    }
   }
 
   .location-location {
     color: black;
     font-weight: 500;
     font-size: 18px;
+    @include small{
+      font-size: 14px;
+    }
   }
 
   .collapse-container{
@@ -58,10 +89,27 @@
     flex-direction: row;
     gap: 50px; 
     width: 100%; 
+    @include small{
+      flex-direction: column;
+      margin-top: 20px;
+    }
   }
 
   .host-information {
     display: flex;
     flex-direction: column;
+    @include small{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 10px;
+    }
   }
 
+  h2 {
+    @include small{
+      font-size: 13px;
+    }
+  }
+ 
+
+    

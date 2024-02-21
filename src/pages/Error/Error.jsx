@@ -1,11 +1,9 @@
 import React from "react"
 import {NavLink } from 'react-router-dom'
-import error404 from "../Assets/404.png"
-import Header from "../Components/Header/Header"
-import Footer from "../Components/Footer/Footer"
-import '../index.css';
-
-
+import error404 from "../../Assets/404.png"
+import Header from "../../Components/Header/Header"
+import Footer from "../../Components/Footer/Footer"
+import './Error.css';
 
 function Error() {
     return (

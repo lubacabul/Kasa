@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Small and (under 700px ) */
+/*Medium and (between 700px and 1020px ) */
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -14,35 +16,14 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .collapse {
   width: 70%;
   margin: auto;
 }
-
-.error {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 139px;
-  margin: 100px;
-}
-.error img {
-  height: 263px;
-  width: 597px;
-}
-.error .error-content {
-  color: #FF6060;
-  font-size: 36px;
-  font-weight: 500;
-}
-.error .nav-link-error {
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
+@media (max-width: 699px) {
+  .collapse {
+    width: 90%;
+  }
 }
 
 .accordions {
@@ -52,6 +33,11 @@ a {
   flex-direction: column;
   margin: 40px 0px;
   width: 100%;
+}
+@media (max-width: 699px) {
+  .accordions {
+    margin: 0px;
+  }
 }
 
 .accordion-title {

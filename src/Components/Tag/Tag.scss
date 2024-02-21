@@ -1,7 +1,11 @@
 @import '../../index.scss';
+@import '../../Media_queries.scss';
 
 .tags {
     margin-top: 25px;
+    @include small{
+        margin: 5px;
+    }
 }
 
 .tag-container {
@@ -19,4 +23,7 @@
     line-height: 14px;
     padding: 5px 10px;
     color: white;
+    @include small{
+        font-size: 10px;
+    }
 }      

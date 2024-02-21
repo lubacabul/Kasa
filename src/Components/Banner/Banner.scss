@@ -1,10 +1,16 @@
-@import '../../index.css';
+@import '../../index.scss';
+@import '../../Media_queries.scss';
 
 .banner { 
     height: 223px;
     margin: 50px auto;
-    max-width: 1240px;
+    width: 85%;
     position: relative;
+    @include small {
+        width: 90%;
+        height: 111px;
+        margin: auto;
+    }
 
         .banner-text { color: white;
             font-size: 48px;
@@ -14,13 +20,26 @@
             left: 2%;
             top: 38%;
             width: 100%;
+                @include small {
+                    font-size: 24px;
+                    text-align: left;
+                }
+
+                @include medium {
+                    font-size: 38px;
+                    text-align: left;
+                }
             }
 
                     img { aspect-ratio : auto;
-                          border-radius: 30px;
-                          filter: brightness(0.68);
+                          border-radius: 15px;
+                          filter: brightness(0.50);
                           height: 223px;  
                           object-fit: cover;
                           width: 100%;
+                            @include small {
+                                height: 100%;
+                                width: 90%;
+                            }
                         }
 }

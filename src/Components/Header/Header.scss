@@ -10,7 +10,9 @@
             width: 90%;
         }
 
-
+        @include medium {
+            width: 90%;
+        }
 
     .header-logo {
         align-items: center;

@@ -9,6 +9,7 @@ function Accordion({ title, content }) {
   const handleToggle = e => {
     setActive(!active)
   }
+
   return (
     <div className={`accordions ${active && "active"}`}>
       <div className="accordion-title" onClick={handleToggle}>

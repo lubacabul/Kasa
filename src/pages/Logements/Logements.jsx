@@ -4,6 +4,7 @@ import DataLogements from '../../Data/logements.json'
 import Error from '../Error'
 import Collapse from '../../Components/Collapse/Collapse_items'
 import './logements.css';
+import '../../index.css'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import Slider from '../../Components/Slider/Slider'
@@ -39,13 +40,19 @@ function LogementsCard() {
                         </div>
                     </div>
                     <div className='collapse-container'>
-                        < Collapse 
+                        < Collapse
                             title='Description'
                             content={location.description}
                         />
-                        < Collapse
+                        < Collapse 
                             title='Équipements'
-                            content= ""
+                            content= {
+                                <ul>
+                                    {location.equipments.map((equipments, index) => (
+                                        <li key={index}>{equipments}</li>       
+                                    ))}
+                                </ul>
+                                } 
                         />
                     </div>
                 </section>

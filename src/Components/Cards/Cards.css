@@ -10,6 +10,10 @@ body {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .collapse {
   width: 70%;
   margin: auto;

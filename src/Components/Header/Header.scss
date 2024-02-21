@@ -1,27 +1,43 @@
 @import '../../index.scss';
+@import '../../Media_queries.scss';
 
 .header {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
     max-width: 1240px;
+        @include small {
+            width: 90%;
+        }
+
+
 
     .header-logo {
         align-items: center;
         height: 68px;
         width: 210px;
+            @include small {
+                height: 47px;
+                width: 145px;
+            }
     }
 
     .nav-bar {
         align-items: center;
         display: flex;
         gap: 50px;
+            @include small {
+                gap: 26px;
+            }
 
         a {
             color: black;
             font-size: 24px;
             font-weight: 500;
             text-decoration: none;
+                @include small {
+                    font-size: 12px;
+                }
 
             &.active {border-bottom: solid 2px black;}
         }

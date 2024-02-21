@@ -1,12 +1,18 @@
-@import '../../index.css';
+@import '../../index.scss';
+@import '../../Media_queries.scss';
 
-footer { align-items: center;
+footer { 
+         align-items: center;
          background-color: black;
          display: flex;
          flex-direction: column;
          gap: 25px;
          padding: 50px;
          width: 100%;
+          @include small {
+            height: 250px;
+            padding: 80px;
+          }
 
          img { height: 39px;
                width: 122px;
@@ -15,5 +21,10 @@ footer { align-items: center;
          p { color: white;
              font-size: 24px;
              font-weight: 500;
-           }
+                @include small {
+                  text-align: center;
+                  font-size: 12px;
+                  line-height: 17px;
+              }
+}
 }

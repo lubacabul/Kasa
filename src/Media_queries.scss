@@ -1,0 +1,14 @@
+/*Medium and (between 700px and 1020px ) */
+
+@mixin medium {
+    @media (max-width: 1020px) {
+        @content;
+  }
+}
+
+/* Small and (under 700px ) */
+@mixin small {
+    @media (max-width: 700px) {
+        @content;
+  }
+}

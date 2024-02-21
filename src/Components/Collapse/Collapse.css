@@ -41,7 +41,7 @@ ul {
 }
 @media (max-width: 699px) {
   .accordions {
-    margin: 0px;
+    margin: 10px;
   }
 }
 

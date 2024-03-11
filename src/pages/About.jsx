@@ -4,6 +4,8 @@ import Footer from "../Components/Footer/Footer"
 import Banner from "../Components/Banner/Banner"
 import Accordion from "../Components/Collapse/Collapse_items";
 
+//Fonction composant la page "à propos"
+
 function About() {
     return (
         <div>

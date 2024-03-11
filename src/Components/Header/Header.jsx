@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../Assets/LOGO.png'
 import './Header.css'
 
+// Création de la fonction composant le header des pages
+
 function Header() {
     return (
        <header className='header'>

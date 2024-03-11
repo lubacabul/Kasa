@@ -3,6 +3,8 @@ import ListLogements from '../../Data/logements.json'
 import '../../index.css'
 import './Cards.css'
 
+// Création d'une fonction récupérant les données des logements pour créer la gallerie
+
 function Logements() {
     return (
         <section className='cards-container'>

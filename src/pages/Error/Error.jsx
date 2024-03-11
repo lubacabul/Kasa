@@ -5,6 +5,8 @@ import Header from "../../Components/Header/Header"
 import Footer from "../../Components/Footer/Footer"
 import './Error.css';
 
+//Fonction de création de la page d'erreur
+
 function Error() {
     return (
         <div>

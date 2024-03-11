@@ -7,6 +7,7 @@ import About from './Pages/About'
 import Error from './Pages/Error/Error'
 import './index.css'
 
+// Création des routes avec React Router pour accéder aux différentes pages 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

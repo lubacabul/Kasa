@@ -11,6 +11,8 @@ import Slider from '../../Components/Slider/Slider'
 import Tag from '../../Components/Tag/Tag'
 import Stars from '../../Components/Stars/Stars'
 
+//Fonction de création des pages spécifique de chaque logement
+
 function LogementsCard() {
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)

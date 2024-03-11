@@ -3,6 +3,8 @@ import { useState } from "react"
 import "./Collapse.css"
 import Arrow from '../../Assets/arrow_top.png'
 
+// Création de la fonction composant Collapse pour la page à propos et les pages logement
+
 function Accordion({ title, content }) {
   const [active, setActive] = useState(false)
 

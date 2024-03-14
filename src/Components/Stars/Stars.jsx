@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import DataLogements from '../../Data/logements.json'
+import DataLogements from '../../data/logements.json'
 import StarActive from '../../Assets/star-active.png'
 import StarInactive from '../../Assets/star-inactive.png'
 

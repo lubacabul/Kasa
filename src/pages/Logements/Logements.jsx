@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import DataLogements from '../../Data/logements.json'
+import DataLogements from '../../data/logements.json'
 import Error from '../Error/Error'
 import Collapse from '../../Components/Collapse/Collapse_items'
 import './logements.css';

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ListLogements from '../../Data/logements.json'
+import ListLogements from '../../data/logements.json'
 import '../../index.css'
 import './Cards.css'
 

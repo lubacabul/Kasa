@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import DataLogements from '../../Data/logements.json'
+import DataLogements from '../../data/logements.json'
 import './Tag.css'
 
 // Création d'une fonction affichant les mots-clés décrivant les logements dans les pages dédiées.

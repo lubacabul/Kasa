@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import DataLogements from '../../Data/logements.json'
+import DataLogements from '../../data/logements.json'
 import ArrowLeft from '../../Assets/arrow_left.png'
 import ArrowRight from '../../Assets/arrow_right.png'
 import './Slider.css'
